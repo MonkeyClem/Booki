@@ -5,8 +5,12 @@
     font-family: 'Raleway', sans-serif;
 }
 
-/*CLASSES GENERALES*/ 
+/*CLASSES GENERALES*/
 
+body{
+    max-width: 1440px;
+    margin: auto;
+}
 section{
     width: 90%;
     display: flex;
@@ -20,7 +24,7 @@ section{
 }
 
 .etoileVide{
-    color: #DEEBFF;
+    color: #F2F2F2;
 }
 
 .carteLink{
@@ -29,7 +33,7 @@ section{
     color: #000;
     display: flex;
     flex-direction: column;
-    border-radius: 5%;
+  
 }
 
 .carteLinkPopulaire{
@@ -38,11 +42,7 @@ section{
     text-decoration: none;
     color: #000;
     display: flex;
-    border-radius: 5%;
 }
-
-
-
 
 .carteLinkActivites{
     height: 100%;
@@ -51,28 +51,21 @@ section{
     color: #000;
     display: flex;
     flex-direction: column-reverse;
-    border-radius: 5%;
-}
-
-.carteLinkActivites:hover{
-    color: #0065FC;
-    box-shadow: 0px 1px 5px 5px #DEEBFF;
-    transition-duration: 1s;
-    border-radius: 5%;
 }
 
 .carteLink:hover{
     color: #0065FC;
     transition-duration: 1s;
-    box-shadow: 0px 1px 5px 5px #DEEBFF;
-    border-radius: 5%;
 }
 
 .carteLinkPopulaire:hover{
     color: #0065FC;
-    box-shadow: 0px 1px 5px 5px #DEEBFF;
     transition-duration: 1s;
-    border-radius: 5%;
+}
+
+.carteLinkActivites:hover{
+    color: #0065FC;
+    transition-duration: 1s;
 }
 
 /*HEADER*/
@@ -80,7 +73,7 @@ section{
 .header{
     height: 75px;
     width: 90%;    
-    margin: auto;
+    margin: 0px auto 16px auto;
     display: flex;
     justify-content: space-between;
 }
@@ -125,19 +118,19 @@ nav{
 /*MAIN*/
 
 /*Recherche*/ 
+
 .recherche{
     flex-direction: column;
+    margin: 0 auto;
 }
-.rechercheHeader{
-    margin-bottom: 20px;
-}
+
 .rechercheHeaderTitre{
     font-size: 20px;
-    margin: 2rem 0rem 1rem 0rem;
+    margin: 16px 0px;
 }
 
 form{
-    margin: 20px 0;
+    margin: 16px 0;
     display: flex;
 }
 
@@ -147,8 +140,8 @@ form i{
 
 .markerWrap {
     background-color: #F2F2F2;
-    padding: 1rem 1.25rem;
-    border-radius: 1rem 0 0 1rem;
+    padding: 16px 20px;
+    border-radius: 16px 0 0 16px;
     text-align: center;
 }
 
@@ -157,11 +150,15 @@ form i{
     border-left: none;
     border-top: #F2F2F2 1px solid;
     border-bottom: #F2F2F2 1px solid;
-    padding: 1rem 1.25rem;
+    padding: 16px 20px;
     box-sizing: border-box;
-    width: 14rem;
-    font-size: 1rem;
+    width: 224px;
+    font-size: 16px;
     font-weight: bold;
+}
+
+.barreDeRecherche::placeholder{
+    color: #000;
 }
 
 .boutton {
@@ -169,9 +166,9 @@ form i{
     color: white;
     font-weight: bold;
     border: none;
-    border-radius: 0 1rem 1rem 0;
-    padding: 1rem 1.25rem;
-    font-size: 1rem;
+    border-radius: 0 16px 16px 0;
+    padding: 16px 20px;
+    font-size: 16px;
     cursor: pointer;
 }
 
@@ -183,7 +180,7 @@ form i{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin: 20px 0;
+    margin: 16px 0;
 }
 
 .rechercheFiltresTitre{
@@ -191,9 +188,10 @@ form i{
     align-self: center;
 }
 
+
 .rechercheFiltresFiltre{
     border: 3px solid #F2F2F2;
-    margin : 0px 32px 8px 0px;
+    margin : 0px 24px 8px 0px;
     display: flex;
     align-items: center;
     border-radius: 30px;
@@ -203,6 +201,8 @@ form i{
    background-color: #DEEBFF;
    color: #0065FC;
    transition-duration: 1s;
+   cursor: pointer;
+   border: 3px solid #DEEBFF;
 }
 
 .filtreIconeContainer{
@@ -232,7 +232,6 @@ form i{
     display: flex;
     align-content: center;
     align-items: center;
-    margin: 20px 0;
 }
 
 .searchResultWrapicon{
@@ -243,7 +242,7 @@ form i{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 1rem;
+    margin-right: 16px;
     color: #0065FC;
 }
 
@@ -256,6 +255,7 @@ form i{
 .hebergementsTitre{
     width: 100%;
     align-self: center;
+    min-width: 260px;
 }
 
 .hebergementsPartiePrincipale{
@@ -269,7 +269,7 @@ form i{
     flex-wrap: wrap;
     padding: 22px;
     box-sizing: border-box;
-    border-radius: 5%;
+    border-radius: 20px;
     background-color: #F2F2F2;
 }
 
@@ -283,20 +283,22 @@ form i{
 }
 
 .hebergementsPartiePrincipaleCarte{
+    height: 30%;
+    width: 30%;
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    height: 30%;
-    width: 30%;
-    border-radius: 5%;
     padding: 4px;
     box-sizing: border-box;
+    box-shadow: 0px 0px 10px 1px #d5d3d3;
+    border-radius: 20px;
 }
+
 .hebergementsPartiePrincipaleCarteImage{
     width: 100%;
     height: 55%;
     object-fit: cover;
-    border-radius: 5% 5% 0% 0%;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .hebergementsPartiePrincipaleCarteDescriptif{
@@ -304,13 +306,12 @@ form i{
     display: flex;
     flex-flow: column;
     justify-content: space-evenly;
-    padding-left: 4%;
+    padding-left: 3%;
 }
 
 .hebergementsPartiePrincipaleCarteNotation{
     display: flex;
 }
-
 
 /*Les plus populaires*/
 
@@ -318,19 +319,19 @@ form i{
     justify-content: space-around;
 }   
 
-
 .hebergementsPartiePopulaireCarte{
     width: 100%;
     background-color: #fff;
     height: 22%;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 4px;
     box-sizing: border-box;
     display: flex;
+    box-shadow: 0px 0px 10px 1px #d5d3d3;
 }
 
 .hebergementsPartiePopulaireCarteImage{
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 20px 0px 0px 20px;
     width: 40%;
     height: 100%;
     object-fit: cover;
@@ -341,7 +342,7 @@ form i{
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    padding: 8px 0px 8px 8px;
+    margin: 1% 0% 1% 5%;
 }
 
 .hebergementsPartiePopulaireCarteNotation{
@@ -362,26 +363,26 @@ form i{
     padding: 24px 0px;
 }
 
-.grosContainer{
+.activitesCartesContainer{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.petitContainer{
+.activitesCartesContainerSousPartie{
     display: flex;
     width: 48.5%;
     height: 550px;
     justify-content: space-between;
 }
 
-
-.petitContainerPartieGauche{   
+.carteLargeWrapper{   
     display: flex;
     width: 47.5%;
 }
-.petitContainerPartieDroite{
+
+.cartePetitesEtMoyennesWrapper{
     width: 47%;
     display: flex;
     flex-direction: column;
@@ -396,8 +397,9 @@ form i{
     flex-direction: column-reverse;
     color: black;
     position: relative;
-    border-radius: 5%;
+    border-radius: 20px;
     box-shadow: 0px 1px 5px 5px #F2F2F2;
+    overflow: hidden;
 }
 
 .activitesCarteMoyenne{
@@ -408,8 +410,9 @@ form i{
     flex-direction: column-reverse;
     color: black;
     position: relative;
-    border-radius: 5%;
+    border-radius: 20px;
     box-shadow: 0px 1px 5px 5px #F2F2F2;
+    overflow: hidden;
 }
 
 .activitesCartePetite{
@@ -420,28 +423,26 @@ form i{
     flex-direction: column-reverse;
     color: black;
     position: relative;
-    border-radius: 5%;
-    box-shadow: 0px 1px 5px 5px #F2F2F2;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 5px #F2F2F2;
+    overflow: hidden;
 }
 
-.activitesCarteHeader {
+.activitesCarteHeader{
     height: 60px;
     display: flex;
     width: 100%;
     align-items: center;
-    padding-left: 5%;
+    padding-left: 4%;
     box-sizing: border-box;
     position: absolute;
     background-color: #fff;
-    border-radius: 0px 0px 5% 5%;
-
 }
 
 .activitesCarteImage{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-radius: 5% 5% 10% 10%;
 }
 
 /*FOOTER*/
@@ -481,13 +482,16 @@ form i{
         width: 100%;
         height: unset;
     }
+    
     nav{
         place-self: unset;
         width: 100%;
     }
+
     .header img{
         place-self: center;
     }
+
     .headerUnorderList{
         display: flex;
         width: 100%;
@@ -495,12 +499,12 @@ form i{
 
     .headerLink {
         padding-bottom: 8px;
-        border-bottom: 3px solid transparent;
+        border-bottom: 2px solid #F2F2F2;;
         border-top: unset;
     }
 
     .headerLink:hover{
-        border-bottom: 3px solid #0065FC;
+        border-bottom: 2px solid #0065FC;
         border-top: unset;
     }
 
@@ -508,21 +512,21 @@ form i{
         padding: 15px 0;
     }
 
-    .grosContainer{
+    .activitesCartesContainer{
         height: unset;
     }
 
-    .petitContainer{
+    .activitesCartesContainerSousPartie{
         flex-direction: column;
         height: unset;
         justify-content: start;
     }
 
-    .petitContainerPartieGauche{
+    .carteLargeWrapper{
         width: 100%;
     }
 
-    .petitContainerPartieDroite{
+    .cartePetitesEtMoyennesWrapper{
         width: 100%;
     }
 
@@ -540,38 +544,37 @@ form i{
         height: 240px;
         margin: 20px 0px;
     }
-}
-/*Pour tous les appareils dont la taille d'écran est comprise entre 768 et 992px*/
-@media screen and (min-width: 768px) and (max-width: 992px){
 
     .hebergements{
         flex-flow : column;
+        width: 100%;
     }
 
     .hebergementsPartiePrincipale{
         width: 100%;
         height: 750px;
+        border-radius: unset;
     }
 
     .hebergementsPartiePopulaire{
         width: 100%;
         height: 750px;
         margin: 32px auto;
+        border-radius: unset;
     }
 
-    #activites{
+    .activites{
         height: unset;
-        padding: 22px;
         box-sizing: border-box;
         margin : 32px auto;
     }
 
-    .grosContainer{
+    .activitesCartesContainer{
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .petitContainer{
+    .activitesCartesContainerSousPartie{
         width: 48%;
     }
 
@@ -579,8 +582,12 @@ form i{
         padding: 22px;
     }
 }
+
 /*Pour tous les appareils dont la taille d'écran est inférieure à 768px*/
 @media screen and (max-width: 768px){
+    body{
+        display: inline-block; /*Evite la déformation lors du passage en dessous des 160px de device-width*/
+    }
 
     .barreDeRecherche{
         width: 90%;
@@ -595,15 +602,11 @@ form i{
     }
 
     .boutton i{
-    display: unset;
+        display: unset;
     }
 
     .rechercheFiltresTitre{
         width: 100%;
-    }
-
-    .rechercheFiltresFiltreTexte{
-        width: min-content;
     }
 
     .hebergements{
@@ -611,7 +614,6 @@ form i{
     }
 
     .hebergementsPartiePrincipale{
-        width: 100%;
         height: unset;
         background-color: unset;
     }
@@ -620,46 +622,37 @@ form i{
         width: 100%;
         background-color: #fff;
         height: 240px;
-        box-shadow: 0px 2px 5px 5px #F2F2F2;
+        min-height: 190px;
+        box-shadow: 0px 0px 5px 5px #F2F2F2;
         margin : 5% auto;;
     }
 
-    .hebergementsPartiePrincipaleCarteImage{
-        width: 100%;
-        height: 55%;
-        object-fit: cover;
-        border-radius: 5% 5% 0% 0%;
-    }
-    
     .hebergementsPartiePopulaire{
-        width: 100%;
         height: unset;
+        border-radius: unset;
     }
 
     .hebergementsPartiePopulaireCarte{
        height: 170px; 
-       margin: 5% auto; ;
+       margin: 5% auto; 
     }
     
     #activites{
-        height: unset;
-        padding: 22px;
+        margin: auto;
         box-sizing: border-box;
-        margin: 0px auto;
     }
 
-    .grosContainer {
+    .activitesCartesContainer{
         flex-direction: column;
         justify-content: unset;
     }
 
-    .petitContainer{
+    .activitesCartesContainerSousPartie{
         width: 100%;
     }
     
     .footer{
         height: unset;
-        display: flex;
         flex-direction: column;
     }
 
@@ -670,14 +663,5 @@ form i{
     .footerSousPartieListe {
         width: 100%;
         padding: 10px 22px;
-    }
-}
-
-@media screen and (max-width: 301px){
-    body{
-        display: inline-block; /*Evite la déformation lors du passage en dessous des 160px de device-width*/
-    }
-    .hebergementsPartiePopulaireCarte{
-        height: unset;
     }
 }

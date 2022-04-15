@@ -35,7 +35,7 @@
                 <span class="markerWrap ">
                     <i class="fas fa-map-marker-alt searchFormWrapiconIcon"></i>
                 </span>
-                <input class="barreDeRecherche" type="search" placeholder="Marseille, France" size="1">
+                <input class="barreDeRecherche" type="search" placeholder="Marseille, France" size="1"  disabled="disabled">
                 <button class="boutton">
                     <span class="bouttonTexte">Rechercher</span>
                     <i class="fas fa-search"></i>
@@ -44,7 +44,7 @@
             <!--Filtres-->
             <div class="rechercheFiltres">
                 <h2 class="rechercheFiltresTitre">Filtres</h2>
-                <div class="rechercheFiltresFiltre">
+                <div class="rechercheFiltresFiltre rechercheFiltresFiltreMobile">
                     <div class="filtreIconeContainer">
                         <i class="fas fa-child filtreIcone"></i>
                     </div>
@@ -56,6 +56,7 @@
                     </div>
                     <span class="rechercheFiltresFiltreTexte">Familial</span>
                 </div>
+                
                 <div class="rechercheFiltresFiltre">
                     <div class="filtreIconeContainer">
                         <i class="fas fa-child filtreIcone"></i>
@@ -132,7 +133,7 @@
                         class="hebergementsPartiePrincipaleCarteImage" alt="Image de l'hébergement proposé">
                     <div class="hebergementsPartiePrincipaleCarteDescriptif">
                         <h3>Hôtel de la mer</h3>
-                        <p>Nuit à partir de<strong>46€</strong></p>
+                        <p>Nuit à partir de <strong>46€</strong></p>
                         <div class="hebergementsPartiePrincipaleCarteNotation">
                             <i class="fas fa-star etoilePleine"></i><i class="fas fa-star etoilePleine"></i>
                             <i class="fas fa-star etoilePleine"></i><i class="fas fa-star etoileVide"></i><i
@@ -228,9 +229,9 @@
         <!--ACTIVITES-->
         <section id="activites">
             <h2 class="activitesTitre">Activités à Marseille</h2>
-            <div class="grosContainer">
-                <div class="petitContainer">
-                    <div class="petitContainerPartieGauche">
+            <div class="activitesCartesContainer">
+                <div class="activitesCartesContainerSousPartie">
+                    <div class="carteLargeWrapper">
                         <div class="activitesCarteLarge">
                             <a class="carteLinkActivites" href="#">
                                 <img src="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
@@ -239,7 +240,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="petitContainerPartieDroite">
+                    <div class="cartePetitesEtMoyennesWrapper">
                         <div class="activitesCarteMoyenne">
                             <a class="carteLinkActivites" href="#">
                                 <img src="images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
@@ -256,8 +257,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="petitContainer">
-                    <div class="petitContainerPartieGauche">
+                <div class="activitesCartesContainerSousPartie">
+                    <div class="carteLargeWrapper">
                         <div class="activitesCarteLarge">
                             <a class="carteLinkActivites" href="#">
                                 <img src="images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
@@ -266,7 +267,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="petitContainerPartieDroite">
+                    <div class="cartePetitesEtMoyennesWrapper">
                         <div class="activitesCartePetite">
                             <a class="carteLinkActivites" href="#">
                                 <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
